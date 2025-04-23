@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tu lista de tareas</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="todolist-container">
+    <h2>Bienvenido a tu To-Do List</h2>
+    <p id="usuarioActivo"></p>
+
+    <div class="task-input-container">
+      <input type="text" id="nuevaTarea" placeholder="Escribe una nueva tarea..." class="task-input">
+      <button onclick="agregarTarea()" class="btn-add">Agregar</button>
+      <p id="contadorTareas"></p>
+
+    </div>
+
+    <ul id="listaTareas" class="task-list"></ul>
+
+    <div class="buttons-container">
+      <button onclick="cerrarSesion()" class="btn-logout">Cerrar sesión</button>
+      <button id="open-settings" class="btn-settings">⚙️ Personalizar</button>
+    </div>
+
+    <!-- Modal de personalización -->
+    <div id="settings-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Personaliza tu To-Do List</h2>
+        
+        <label>Color de fondo:
+          <input type="color" id="bg-color-picker" class="input-color">
+        </label>
+
+        <label>Fuente:
+          <select id="font-selector" class="input-select">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Courier New">Courier New</option>
+          </select>
+        </label>
+
+        <label>Tamaño de fuente:
+          <input type="range" id="font-size-slider" min="12" max="32" value="16" class="input-range">
+        </label>
+
+        <div class="modal-buttons">
+          <button id="reset-settings" class="btn-reset">Reiniciar</button>
+          <button id="close-settings" class="btn-close">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

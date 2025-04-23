@@ -1,0 +1,167 @@
+/* Estilo general para el body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal del To-Do List */
+.todolist-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 400px;
+  text-align: center;
+}
+
+/* Títulos */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Contenedor de la entrada de tareas */
+.task-input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.task-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 75%;
+  margin-right: 10px;
+}
+
+.btn-add {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #45a049;
+}
+
+/* Lista de tareas */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Botones en la parte inferior */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Botón de cerrar sesión */
+.btn-logout, .btn-settings {
+  padding: 10px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-logout:hover, .btn-settings:hover {
+  background-color: #e53935;
+}
+
+/* Modal de personalización */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+/* Campos del modal */
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.input-color, .input-select, .input-range {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botones del modal */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-reset, .btn-close {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-reset:hover, .btn-close:hover {
+  background-color: #45a049;
+}
+

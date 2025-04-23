@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Iniciar sesión</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Iniciar sesión</h2>
+    <form onsubmit="event.preventDefault(); iniciarSesion();" class="login-form">
+      <input type="email" id="loginCorreo" placeholder="Correo electrónico" required autocomplete="email" class="input-field">
+      <input type="password" id="loginPassword" placeholder="Contraseña" required autocomplete="current-password" class="input-field">
+      <button type="submit" class="btn-submit">Iniciar sesión</button>
+      <p id="loginError" class="error-message"></p>
+    </form>
+    <p class="register-link">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+  </div>
+</body>
+</html>
